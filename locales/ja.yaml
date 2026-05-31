@@ -1,0 +1,66 @@
+app:
+  title: "お金払っちゃいなよ君"
+
+tabs:
+  input: "📝 請求の入力"
+  unpaid: "📊 現在の未精算状況"
+  settled: "✅ 精算済み履歴"
+  edit: "🛠️ データの編集・削除"
+
+sidebar:
+  title: "👥 メンバー管理"
+  add_label: "新メンバーを追加"
+  add_placeholder: "名前を入力"
+  add_button: "追加"
+  add_success: "「{name}」を追加しました！"
+
+tab_input:
+  subheader: "📝 新しい支払いを記録"
+  date_label: "日付"
+  location_label: "場所・イベント名"
+  location_placeholder: "例：吉川"
+  amount_prompt: "👥 メンバーごとの金額を入力してください"
+  no_members: "メンバーを追加してください。"
+  amount_label: "{member} (円)"
+  total_label: "📊 今回の合計金額"
+  total_value: "{amount} 円"
+  submit_button: "データを登録して請求を上乗せする"
+  error_zero: "合計金額が0円です。誰か1人以上の金額を入力してください。"
+  spinner: "データをデータベースに登録中..."
+  success: "「{location}」の明細を登録しました！"
+
+tab_unpaid:
+  subheader: "📊 現在の未精算状況"
+  member_total: "🔴 **{member} さん**: 未精算トータル **{total} 円**"
+  expander: "➔ 明細・精算はこちら"
+  detail: "📅 {date} | 📍 {location} : **{amount} 円**"
+  settle_button: "精算"
+  spinner: "精算処理中..."
+  no_unpaid: "🟢 **{member} さん**: 未精算なし (0 円)"
+  no_members: "メンバーが登録されていません。"
+
+tab_settled:
+  subheader: "✅ 過去の精算済み履歴"
+  filter_label: "👤 履歴を見たいメンバーを選択"
+  filter_all: "全員分を表示"
+  history_item: "✨ **{date}** | 📍 {location} | 👤 **{member} さん** : ~~{amount} 円~~"
+  no_history_for_member: "{member} さんの精算済み履歴はまだありません。"
+  no_data: "精算済みのデータはまだありません。"
+
+tab_edit:
+  subheader: "🛠️ 登録した練習場所や日付の変更・削除"
+  description: "過去に登録したイベントそのものを修正したり、丸ごと削除できます。"
+  select_label: "修正・削除するイベントを選択してください"
+  event_option: "📅 {date} | 📍 {location}"
+  edit_header: "### ✏️ 内容を書き換える"
+  date_label: "日付を変更"
+  location_label: "場所・イベント名を変更"
+  amount_prompt: "👤 各メンバーの金額を変更"
+  amount_label: "{member} の金額"
+  update_button: "変更を保存する"
+  delete_button: "🚨 このイベントを完全に削除する"
+  update_spinner: "データを更新中..."
+  delete_spinner: "データを削除中..."
+  update_success: "データの変更が完了しました！"
+  delete_success: "データを完全に削除しました。"
+  no_data: "編集可能なイベントデータがまだありません。"
